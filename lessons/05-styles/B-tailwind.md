@@ -1,4 +1,4 @@
-Our tailwind config looks like:
+Our `tailwindconfig.js` looks like this:
 
 ```js
 /** @type {import('tailwindcss').Config} */
@@ -19,7 +19,7 @@ module.exports = {
 };
 ```
 
-We then need to add directives to our global css file
+We then need to add directives to our global CSS file
 
 ```css
 @tailwind base;

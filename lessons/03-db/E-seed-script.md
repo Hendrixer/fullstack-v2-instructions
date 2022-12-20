@@ -1,10 +1,10 @@
-When building out our UI, we'll need data to actually bind to for our components to render.
-We can mock this data out on many different levels. Hard code in the components, create a json file with fake data, don't use the ORM and use fake data, or we can seed the DB.
-I prefer the later, this keeps us from going back and making changes to our code once we actually have real data and need to remove the mocks.
+When building out our UI, we'll need data for our components to render.
+We can mock this data out on many different levels. Hard code in the components, create a JSON file with fake data, skip the ORM and use fake data, or we can seed the DB.
+I prefer the latter. This keeps us from going back and making changes to our code once we actually have real data and need to remove the mocks.
 
 <br>
 
-ALl we have to do is write a seed script. A seed script is just a peice of code that inserts fake data into our dev DB so we can use it for development.
+All we have to do is write a seed script. A seed script is just a piece of code that inserts fake data into our dev DB so we can use it for development.
 
 <br>
 
@@ -74,11 +74,11 @@ main()
   });
 ```
 
-This will create a mock user with some projects and tasks that we can use to signup and test things.
+This will create a mock user with some projects and tasks that we can use to signup and test the application.
 
 <br>
 
-Next, we have to tell prisma about this in our package.json. The seed script will be running using ts-node, so we need to create a new tsconfig for that run time. Create `tsconfig-seed.json` and add this. It's exactly the same as our main one with just a change on the module type.
+Next, we have to tell prisma about this in our `package.json`. The seed script will be running using `ts-node`, so we need to create a new tsconfig for that runtime. Create `tsconfig-seed.json` and add the code below. It's exactly the same as our main one with just a change on the module type.
 
 ```json
 {
@@ -117,7 +117,7 @@ Next, we have to tell prisma about this in our package.json. The seed script wil
 }
 ```
 
-Next, lets adjust a package.json.
+Next, let's adjust our package.json.
 
 ```json
 {

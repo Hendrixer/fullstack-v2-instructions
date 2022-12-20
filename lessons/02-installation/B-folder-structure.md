@@ -1,18 +1,18 @@
 ## app
 
-All of our pages will go here. Using the app directory instead of the pages directory means we're opting into server / client components architecture.
+All of our pages will go here. Using the app directory instead of the pages directory means we're opting into the server / client components architecture.
 
 ## assets
 
-Nice place to put all and any images we might have.
+Nice place to put any images we might have.
 
 ## components
 
-Any and all components that aren't pages.
+Any components that aren't pages.
 
 ## lib
 
-Non component, utility code used all over the app. Things like hashing passwords, checkint JWT tokens, fetching data from the API.
+Non-component, utility code used all over the app. Things like hashing passwords, checking JWT tokens, fetching data from the API, etc.
 
 ## pages
 

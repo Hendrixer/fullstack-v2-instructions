@@ -1,4 +1,4 @@
-Out sidebar component
+Our Sidebar component
 
 ```tsx
 import Card from "./Card";

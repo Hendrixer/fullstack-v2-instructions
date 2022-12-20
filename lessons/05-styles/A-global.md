@@ -1,4 +1,4 @@
-We'll be using tailwind for all of our styling, but we have a little bit of global styling we need to add
+We'll be using [Tailwind CSS](https://tailwindcss.com/) for all of our styling, but we have a little bit of global styling we need to add as well.
 
 ```css
 @layer base {

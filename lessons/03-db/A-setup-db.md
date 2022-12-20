@@ -1,4 +1,4 @@
-The fastest and easiest way to setup a Psql DB if you already don't have one is to use a hosted one.
+The fastest and easiest way to setup a Psql DB if you don't already have one is to use a hosted one.
 
 Checkout [Railway](https://railway.app/) to setup a free one. Either way, you'll need the connection string. Inside your `.env` file, add your DB connection string
 

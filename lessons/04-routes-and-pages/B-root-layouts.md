@@ -1,4 +1,4 @@
-Both of our layouts use have a glass page UI component that we have yet to make. Let's create that in the components dir.
+Both of our layouts use a glass pane UI component that we have yet to make. Let's create that in the components dir.
 
 ```tsx
 import clsx from "clsx";

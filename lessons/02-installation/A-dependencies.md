@@ -6,7 +6,7 @@ The fastest way to get started is to use `create-next-app`.
 
 <br>
 
-This will download and setup a Next.js v13 app for us. For the other dependencies, take a look at the package.json
+This will download and setup a Next.js v13 app for us. For the other dependencies, take a look at the package.json file.
 
 ```json
 {

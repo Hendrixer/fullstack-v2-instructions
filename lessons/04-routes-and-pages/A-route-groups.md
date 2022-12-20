@@ -1,11 +1,13 @@
-The routes for app will be as follows
+The routes for app will be as follows:
 
-`/register`
-`/signin`
-`/home`
-`/project/[id]`
+```
+/register
+/signin
+/home
+/project/[id]
+```
 
-The home and project route share the same layout, both being part of the dashboard. Signin and register share the same layout with each other as well. Because all 4 routes are on the same parent segment `/`, they all would share the same layout.
+The home and project routes share the same layout, both being part of the dashboard. Signin and register share the same layout with each other as well. Because all 4 routes are on the same parent segment `/`, they all would share the same layout.
 
 <br>
 

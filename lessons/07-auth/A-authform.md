@@ -40,7 +40,7 @@ export const signin = async (user) => {
 };
 ```
 
-Our Authform component
+Our AuthForm component
 
 ```tsx
 "use client";

@@ -1,4 +1,4 @@
-Our button component:
+Our Button component:
 
 ```tsx
 import { cva, VariantProps } from "class-variance-authority";

@@ -1,4 +1,4 @@
-Our Sidebar Link component
+Our SidebarLink component
 
 ```tsx
 "use client";
