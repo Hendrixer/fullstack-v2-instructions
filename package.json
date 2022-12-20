@@ -5,8 +5,8 @@
   "author": "Brian Holt <btholt+next-course-starter@gmail.com>",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && npm run csv",
-    "export": "next build && next export && npm run csv",
+    "build": "next build ",
+    "export": "next build && next export",
     "start": "next start",
     "csv": "node csv/index.js"
   },
