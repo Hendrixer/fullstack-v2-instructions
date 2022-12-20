@@ -13,6 +13,5 @@
   },
   "description": "Next.js has been updated to version 13. This new version includes the latest from React v18.",
   "keywords": ["your", "Google", "keywords", "here"],
-  "productionBaseUrl": "/next-course-starter",
   "csvPath": "./out/lessons.csv"
 }
