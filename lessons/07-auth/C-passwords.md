@@ -1,6 +1,6 @@
 Before we can create the API routes to handle user auth, we need some utility functions.
 
-Create a new file, `auth` in the `lib` folder and add this to it. These functions will help us hash and check passwords.
+Create a new file, `auth` in the `lib` folder and add this code. These functions will help us hash and check passwords.
 
 ```ts
 import bcrypt from "bcrypt";
@@ -13,7 +13,7 @@ export const comparePasswords = (plainTextPassword, hashedPassword) =>
   bcrypt.compare(plainTextPassword, hashedPassword);
 ```
 
-This file might be imported by a server component so we must tell Next.js about is dependencies, so in the `next.config.js` we must add `bcrypt` there.
+This file might be imported by a server component so we'll tell Next.js about the dependencies In the `next.config.js` we'll add `bcrypt`:
 
 ```js
 experimental: {

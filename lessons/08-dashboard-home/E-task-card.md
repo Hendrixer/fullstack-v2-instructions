@@ -1,6 +1,4 @@
-Next is the task card
-
-Create `/components/TaskCard.tsx`
+Next is the task card. Create `/components/TaskCard.tsx`:
 
 ```ts
 import { getUserFromCookie } from "@/lib/auth";

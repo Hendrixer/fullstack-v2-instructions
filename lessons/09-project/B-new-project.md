@@ -1,4 +1,4 @@
-To create a new project, we need to make a component that shows the UI and makes an API request. Let's the make API function in the API lib
+To create a new project, we need to make a component that shows the UI and makes an API request. Let's make the API function in the API lib:
 
 ```ts
 export const createNewProject = (name) => {

@@ -1,6 +1,4 @@
-The greetings component sits at the top of the home page
-
-Create `/components/Greetings.tsx`
+The greetings component sits at the top of the home page. Create `/components/Greetings.tsx`
 
 ```ts
 import { getUserFromCookie } from "@/lib/auth";

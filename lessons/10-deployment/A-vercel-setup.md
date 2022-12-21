@@ -1,1 +1,1 @@
-Be sure to add your env variables to vercel and migrate your DB if its not the same hosted one you were using for dev
+Be sure to add your `.env` variables to [Vercel](https://vercel.com/) and migrate your DB if it's not the same as your development DB.

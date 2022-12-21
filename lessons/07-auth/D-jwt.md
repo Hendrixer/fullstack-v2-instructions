@@ -1,6 +1,6 @@
-We'll be using JWT's for auth. Let's create some methods for handling that. In the same `/lib/auth.ts` file
+We'll be using JWT's for auth. Let's create some methods for handling them in the same `/lib/auth.ts`.
 
-Create a jwt
+Create a JWT:
 
 ```ts
 export const createJWT = (user) => {
@@ -17,7 +17,7 @@ export const createJWT = (user) => {
 };
 ```
 
-Validating a JWT
+Validate a JWT:
 
 ```ts
 export const validateJWT = async (jwt) => {
@@ -30,7 +30,7 @@ export const validateJWT = async (jwt) => {
 };
 ```
 
-Getting the JWT from cookies
+Getting the JWT from cookies:
 
 ```ts
 export const getUserFromCookie = async (cookies) => {

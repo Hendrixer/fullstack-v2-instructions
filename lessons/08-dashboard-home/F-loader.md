@@ -1,4 +1,4 @@
-Let's create a loading component for the dashboard page
+Let's create a loading component for the dashboard page.
 
 Create `loading.tsx` in the dashboard folder
 

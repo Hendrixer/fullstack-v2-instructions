@@ -1,6 +1,4 @@
-Now we'll create the loading component for the greetings catd
-
-Create `/components/GreetingsSkeleton.tsx`
+Now we'll create the loading component for the greetings card. Create `/components/GreetingsSkeleton.tsx`:
 
 ```ts
 import Card from "./Card";
@@ -28,7 +26,7 @@ const GreetingsSkeleton = () => {
 export default GreetingsSkeleton;
 ```
 
-Now using `<Suspense>`, we can show this loader while the greetings component is laoding in the dashboard home page
+Using `<Suspense>`, we can show this loader while the greetings component is loading in the dashboard home page
 
 ```ts
 <Suspense fallback={<GreetingsSkeleton />}>

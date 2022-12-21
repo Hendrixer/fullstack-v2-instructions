@@ -1,6 +1,6 @@
 Next we need API routes for auth
 
-For register `/api/register`
+For register `/api/register`:
 
 ```ts
 import { NextApiRequest, NextApiResponse } from "next";
@@ -40,7 +40,7 @@ export default async function register(
 }
 ```
 
-For sigin `/api/signin`
+For sigin `/api/signin`:
 
 ```ts
 import { NextApiRequest, NextApiResponse } from "next";
