@@ -1,6 +1,8 @@
+## ProjectCard Component
+
 Next, the project card. Create `/components/ProjectCard.tsx`
 
-```ts
+```javascript
 import { FC } from "react";
 import { Prisma } from "@prisma/client";
 import Card from "./Card";
@@ -63,6 +65,8 @@ const ProjectCard: FC<{ project: ProjectWithTasks }> = ({ project }) => {
 export default ProjectCard;
 ```
 
+## Getting Project Data
+
 We then need to get projects on the home page.
 
 ```ts
@@ -86,12 +90,12 @@ We can now call `getData` in the page component and loop over the projects to cr
 
 ```ts
 async function Page() {
-  const projects = await getData();
+  const { projects } = await getData();
 
   //.....
   {
     projects.map((project) => (
-      <div className="w-1/3 p-3">
+      <div className="w-1/3 p-3" key={project.id}>
         <Link href={`/project/${project.id}`}>
           <ProjectCard project={project} />
         </Link>
@@ -100,3 +104,26 @@ async function Page() {
   }
 }
 ```
+
+## Fix The Seed Script
+
+The original seed script never hashed the password so you won't be able to log in with the seeded user. To fix this, make sure your seed script hashes the password:
+
+```javascript
+// in prisma/seed.ts
+create: {
+// ...
+  password: await hashPassword("password"),
+// ...
+}
+```
+
+## Delete Data and Reseed Database
+
+The seed script uses an upsert which won't update the current user. Reset the database and reseed the data:
+
+```bash
+npx prisma migrate reset
+```
+
+> ✔️ Code Checkpoint: The current code for the application can be found on the [project-card branch](https://github.com/Hendrixer/fullstack-app-v2-app/tree/project-card).

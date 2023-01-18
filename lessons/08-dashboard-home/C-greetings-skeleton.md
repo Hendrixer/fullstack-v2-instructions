@@ -1,3 +1,5 @@
+## GreetingsSkeleton Component
+
 Now we'll create the loading component for the greetings card. Create `/components/GreetingsSkeleton.tsx`:
 
 ```ts
@@ -33,3 +35,5 @@ Using `<Suspense>`, we can show this loader while the greetings component is loa
   <Greetings />
 </Suspense>
 ```
+
+> ✔️ Code Checkpoint: The current code for the application can be found on the [middleware branch](https://github.com/Hendrixer/fullstack-app-v2-app/tree/middleware).

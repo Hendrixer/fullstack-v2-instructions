@@ -1,4 +1,6 @@
-Because Next api functions run in a serveless environment, we're going to cache our prisma client and reuse it when possible to avoid having too many connections.
+## DB Helper Functions
+
+Because Next API functions run in a serveless environment, we're going to cache our Prisma client and reuse it when possible to avoid having too many connections.
 
 In `/lib/db.ts` add this
 

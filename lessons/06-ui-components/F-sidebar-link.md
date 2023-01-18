@@ -1,4 +1,4 @@
-Our SidebarLink component
+## SidebarLink Component
 
 ```tsx
 "use client";
@@ -33,3 +33,5 @@ const SidebarLink = ({ link }) => {
 
 export default SidebarLink;
 ```
+
+> ✔️ Code Checkpoint: The current code for the application can be found on the [sidebar branch](https://github.com/Hendrixer/fullstack-app-v2-app/tree/sidebar).

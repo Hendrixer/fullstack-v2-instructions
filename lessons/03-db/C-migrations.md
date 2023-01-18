@@ -1,3 +1,5 @@
+## Migrations
+
 After creating our schema, we need to do a few things:
 
 1. Sync our DB and schema together

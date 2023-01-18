@@ -1,3 +1,5 @@
+## JSON Web Tokens
+
 We'll be using JWT's for auth. Let's create some methods for handling them in the same `/lib/auth.ts`.
 
 Create a JWT:

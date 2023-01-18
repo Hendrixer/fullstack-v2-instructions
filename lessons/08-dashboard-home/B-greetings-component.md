@@ -1,3 +1,5 @@
+## Greetings Component
+
 The greetings component sits at the top of the home page. Create `/components/Greetings.tsx`
 
 ```ts

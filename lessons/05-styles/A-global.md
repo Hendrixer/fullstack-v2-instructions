@@ -1,3 +1,5 @@
+## Global CSS
+
 We'll be using [Tailwind CSS](https://tailwindcss.com/) for all of our styling, but we have a little bit of global styling we need to add as well.
 
 ```css

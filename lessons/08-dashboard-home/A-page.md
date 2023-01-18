@@ -1,3 +1,5 @@
+## Home Page
+
 Let's create the dashboard home page
 
 ```ts
@@ -24,4 +26,15 @@ export default async function Page() {
     </div>
   );
 }
+```
+
+## Delaying API Calls
+
+This `delay` method will be used to slow down API calls by delaying network requests. Copy this code into a new file `/lib/async.ts`.
+
+```javascript
+export const delay = (time) =>
+  new Promise((resolve) => {
+    setTimeout(() => resolve(1), time);
+  });
 ```

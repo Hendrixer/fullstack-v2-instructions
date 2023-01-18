@@ -1,3 +1,5 @@
+## Middleware
+
 We'll rely on middleware to protect our app from unauthenticated users. Create a `middleware.ts` file on the root
 
 ```ts

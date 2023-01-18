@@ -1,3 +1,5 @@
+## API Routes
+
 Next we need API routes for auth
 
 For register `/api/register`:
@@ -89,3 +91,5 @@ export default async function signin(
   }
 }
 ```
+
+> ✔️ Code Checkpoint: The current code for the application can be found on the [auth-routes branch](https://github.com/Hendrixer/fullstack-app-v2-app/tree/auth-routes).

@@ -1,4 +1,6 @@
-To create a new project, we need to make a component that shows the UI and makes an API request. Let's make the API function in the API lib:
+## Creating New Projects
+
+To create a new project, we need to make a component that shows the UI and makes an API request. Let's make the API function in `/lib/api.ts`:
 
 ```ts
 export const createNewProject = (name) => {
@@ -10,7 +12,7 @@ export const createNewProject = (name) => {
 };
 ```
 
-Then the API handler in `page/api/project`
+Then the API handler in `page/api/project.ts`
 
 ```ts
 import { validateJWT } from "@/lib/auth";
@@ -30,7 +32,15 @@ export default async function handler(req, res) {
 }
 ```
 
-And finally, a client component
+## NewProject Component
+
+And finally, a client component. You'll need to install React Modal:
+
+```bash
+npm i react-modal @types/react-modal
+```
+
+Then create a `NewProject.tsx` in the components directory:
 
 ```ts
 "use client";
@@ -81,4 +91,12 @@ const NewProject = () => {
 export default NewProject;
 ```
 
-Add this component to the dashboard home
+Add this component to the Dashboard Home Page
+
+```jsx
+<div className="w-1/3 p-3">
+  <NewProject />
+</div>
+```
+
+> ✔️ Code Checkpoint: The current code for the application can be found on the [new-project branch](https://github.com/Hendrixer/fullstack-app-v2-app/tree/new-project).

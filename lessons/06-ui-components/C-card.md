@@ -1,4 +1,4 @@
-Our Card component
+## Card Component
 
 ```tsx
 import clsx from "clsx";

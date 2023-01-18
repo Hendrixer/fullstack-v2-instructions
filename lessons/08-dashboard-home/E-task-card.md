@@ -1,3 +1,5 @@
+## TaskCard Component
+
 Next is the task card. Create `/components/TaskCard.tsx`:
 
 ```ts
@@ -26,7 +28,7 @@ const getData = async () => {
 
   return tasks;
 };
-const TasksCard = async ({ title, tasks }) => {
+const TaskCard = async ({ title, tasks }) => {
   const data = tasks || (await getData());
 
   return (

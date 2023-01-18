@@ -1,3 +1,5 @@
+## Sign In & Register Pages
+
 Now to add the `AuthForm` to the right pages
 
 ```ts
@@ -17,3 +19,5 @@ export default function Register() {
   return <AuthForm mode="register" />;
 }
 ```
+
+> ✔️ Code Checkpoint: The current code for the application can be found on the [auth-pages branch](https://github.com/Hendrixer/fullstack-app-v2-app/tree/auth-pages).

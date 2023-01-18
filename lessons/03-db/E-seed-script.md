@@ -1,12 +1,10 @@
-When building out our UI, we'll need data for our components to render.
-We can mock this data out on many different levels. Hard code in the components, create a JSON file with fake data, skip the ORM and use fake data, or we can seed the DB.
+## Seed Script
+
+When building out our UI, we'll need data for our components to render. We can mock this data out on many different levels. Hard code in the components, create a JSON file with fake data, skip the ORM and use fake data, or we can seed the DB.
+
 I prefer the latter. This keeps us from going back and making changes to our code once we actually have real data and need to remove the mocks.
 
-<br>
-
 All we have to do is write a seed script. A seed script is just a piece of code that inserts fake data into our dev DB so we can use it for development.
-
-<br>
 
 Let's create a seed script. Make file in the prisma folder called `seed.ts`
 
@@ -76,7 +74,18 @@ main()
 
 This will create a mock user with some projects and tasks that we can use to signup and test the application.
 
-<br>
+> During the recording, Scott had an issue adding the `paths` to the `tsconfig.json` file. Here are the correct paths:
+
+```json
+"paths": {
+    "@/components/*": ["./components/*"],
+    "@/hooks/*": ["./hooks/*"],
+    "@/lib/*": ["./lib/*"],
+    "@/styles/*": ["./styles/*"],
+    "@/prisma/*": ["./prisma/*"],
+    "@/assets/*": ["./assets/*"]
+  }
+```
 
 Next, we have to tell prisma about this in our `package.json`. The seed script will be running using `ts-node`, so we need to create a new tsconfig for that runtime. Create `tsconfig-seed.json` and add the code below. It's exactly the same as our main one with just a change on the module type.
 
@@ -104,12 +113,12 @@ Next, we have to tell prisma about this in our `package.json`. The seed script w
       }
     ],
     "paths": {
-      "@/components/*": ["components/*"],
-      "@/hooks/*": ["hooks/*"],
-      "@/lib/*": ["lib/*"],
-      "@/styles/*": ["styles/*"],
-      "@/prisma/*": ["prisma/*"],
-      "@/assets/*": ["assets/*"]
+      "@/components/*": ["./components/*"],
+      "@/hooks/*": ["./hooks/*"],
+      "@/lib/*": ["./lib/*"],
+      "@/styles/*": ["./styles/*"],
+      "@/prisma/*": ["./prisma/*"],
+      "@/assets/*": ["./assets/*"]
     }
   },
   "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx"],

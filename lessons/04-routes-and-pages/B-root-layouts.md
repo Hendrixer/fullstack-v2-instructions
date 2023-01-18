@@ -1,4 +1,6 @@
-Both of our layouts use a glass pane UI component that we have yet to make. Let's create that in the components dir.
+## Root Layouts
+
+Both of our layouts use a glass pane UI component that we have yet to make. Let's create that in the `components` directory.
 
 ```tsx
 import clsx from "clsx";
@@ -19,7 +21,7 @@ const GlassPane = ({ children, className }) => {
 export default GlassPane;
 ```
 
-Now for our Auth root layout
+## Auth Root Layout
 
 ```tsx
 import "@/styles/global.css";
@@ -43,7 +45,7 @@ export default function AuthRootLayout({ children }) {
 }
 ```
 
-And our Dashboard root layout
+## Dashboard Root Layout
 
 ```tsx
 import "@/styles/global.css";

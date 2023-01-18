@@ -1,3 +1,5 @@
+## Database Schema
+
 Everything starts with an DB schema.
 We need to model our data using Prisma.
 

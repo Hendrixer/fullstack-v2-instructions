@@ -1,6 +1,8 @@
+## HomePageLoader Component
+
 Let's create a loading component for the dashboard page.
 
-Create `loading.tsx` in the dashboard folder
+Create `loading.tsx` in the `/app/(dashboard)/home` folder
 
 ```ts
 import Card from "@/components/Card";

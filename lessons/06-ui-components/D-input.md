@@ -1,4 +1,4 @@
-Our Input component
+## Input Component
 
 ```tsx
 import clsx from "clsx";

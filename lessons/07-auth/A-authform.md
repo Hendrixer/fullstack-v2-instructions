@@ -1,3 +1,5 @@
+## Authentication
+
 We need to be able to make API request to API routes that will allow a user to sign in and register. Lets make those functions in `/lib/api`
 
 ```ts
@@ -40,7 +42,7 @@ export const signin = async (user) => {
 };
 ```
 
-Our AuthForm component
+## AuthForm component
 
 ```tsx
 "use client";
