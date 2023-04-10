@@ -67,5 +67,5 @@ const TaskCard = async ({ title, tasks }) => {
   );
 };
 
-export default TasksCard;
+export default TaskCard;
 ```
