@@ -2,8 +2,10 @@
 
 The fastest way to get started is to use `create-next-app`.
 
+> Note: Make sure you pin the Next.js version to 13.1 for this course.
+
 ```bash
-npx create-next-app@latest --experimental-app
+npx create-next-app@13.1 --experimental-app
 ```
 
 This will download and setup a Next.js v13 app for us. For the other dependencies, take a look at the `package.json` file.

@@ -18,6 +18,8 @@ Non-component, utility code used all over the app. Things like hashing passwords
 
 Our API routes will live in `/pages/api`. API have yet to be migrated from the pages directory.
 
+> Note: API Routes have been migrated in Next.js 13.2 however this course uses Next.js 13.1. More information about the change [can be found here](https://nextjs.org/blog/next-13-2#custom-route-handlers)
+
 ## styles
 
 All our styles
