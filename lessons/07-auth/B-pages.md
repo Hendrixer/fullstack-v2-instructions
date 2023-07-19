@@ -6,7 +6,7 @@ Now to add the `AuthForm` to the right pages
 // signin/page.tsx
 import AuthForm from "@/components/AuthForm";
 
-export default function Register() {
+export default function Signin() {
   return <AuthForm mode="signin" />;
 }
 ```
